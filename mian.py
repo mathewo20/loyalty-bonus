@@ -22,5 +22,9 @@ try:
          print("okay i wont convert it")
 
 except ValueError:
-    print("please enter a valid number for temperature")
+    print("please enter a valid number for temperature") 
+
+print("is it going to rain tomorrow ? ")
+while True: 
+    
 
