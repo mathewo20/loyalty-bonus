@@ -1,59 +1,59 @@
-print("What is the weather forcast for tomorrow")
+
+print("What is the weather forecast for tomorrow")
+
+
 while True:
-    temp = input("Temperature: " )
+    temp_input = input("Temperature (C): ")
     try:
-        float(temp)
+        temp = float(temp_input)
         break
     except ValueError:
-        print("please enter a valid number for temperature")
+        print("Please enter a valid number for temperature.")
 
-print("the Temperature is " + str(temp) + " C")
+print("The temperature is " + str(temp) + "°C")
 
-print("would you like it to be converted into fahrenheit ? ")
-
-user_choice = input("yes or no ?: ")
+print("Would you like it to be converted into Fahrenheit?")
+user_choice = input("yes or no?: ").lower()
 
 if user_choice == "yes":
-    fahrenheit = float(temp) * 9/5 + 32
-    print(fahrenheit + " F")
+    fahrenheit = temp * 9/5 + 32
+    print(str(fahrenheit) + "°F")
 else:
-    print("okay i wont convert it")
+    print("Okay, I won’t convert it.")
 
-# except ValueError:
-#     print("please enter a valid number for temperature") 
 
 if temp > 20:
-    print("wow its going to be a hot day")
+    print("Wow, it's going to be a hot day!")
 
-print("will it rain ?")
-
-rain = input("yes or no ?: ")
+print("Will it rain?")
+rain = input("yes or no?: ").lower()
 
 if rain == "yes":
-    print("have an umbrella with you or a rain coat be fly and dry")
+    print("Have an umbrella or raincoat — be fly and dry!")
 else:
-    print("enjoy the weather and wear some baggy jeans and a t shirt or if your not a fan of baggy jeans then just wear some shorts and a t shirt")
+    print("Enjoy the weather! Wear some baggy jeans and a t-shirt, or shorts if you prefer.")
 
-if temp < '10':
-    print("woah thats a lil cold not really my liking ")
-print("will it rain ?")
+if temp < 10:
+    print("Woah, that's a little cold—not my preference!")
 
-rain = input("yes or no ?: ")
+print("Will it rain?")
+rain = input("yes or no?: ").lower()
+
 if rain == "yes":
-    print("have a statement piece with you like the jacket or hoodie that you have been wanting to wear but haven't had the chance to yet and a umbrella as an acessory be fly and dry")
+    print("Wear a nice statement jacket or hoodie and bring an umbrella stay fly and dry.")
 else:
-    print("cold is not really my liking but if you like the cold enjoy the weather dress apropreately")
+    print("If you like the cold, enjoy it just dress appropriately!")
 
 if temp < 5:
-    print("it is really cold i do not like that ")
-print("will it rain ?")
- 
-rain = input("yes or no ?: ")
+    print("It's really cold I do not like that!")
+
+print("Will it rain?")
+rain = input("yes or no?: ").lower()
 
 if rain == "yes":
-    print("cover up completely not only is it cold but its raining too which is the worse ")
+    print("Cover up completely cold AND rain is the worst combination.")
 else:
-    print("atleast its not raining but its still pretty cold weather so wear your ski mask and 700 northface puffer jacket or canada goose if you have one and some gloves and a beanie to keep you warm")
+    print("At least it's not raining but it's still cold Wear a ski mask a puffer jacket gloves and a beanie to stay warm.")
 
 
 
