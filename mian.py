@@ -7,7 +7,7 @@ while True:
     except ValueError:
         print("please enter a valid number for temperature")
 
-print("the Temperature is " + temp)
+print("the Temperature is " + str(temp) + " C")
 
 print("would you like it to be converted into fahrenheit ? ")
 
@@ -22,7 +22,7 @@ else:
 # except ValueError:
 #     print("please enter a valid number for temperature") 
 
-if float(temp) > 20:
+if temp > 20:
     print("wow its going to be a hot day")
 
 print("will it rain ?")
@@ -34,7 +34,7 @@ if rain == "yes":
 else:
     print("enjoy the weather and wear some baggy jeans and a t shirt or if your not a fan of baggy jeans then just wear some shorts and a t shirt")
 
-if float(temp) < 10:
+if temp < '10':
     print("woah thats a lil cold not really my liking ")
 print("will it rain ?")
 
@@ -44,7 +44,7 @@ if rain == "yes":
 else:
     print("cold is not really my liking but if you like the cold enjoy the weather dress apropreately")
 
-if float(temp) < 5:
+if temp < 5:
     print("it is really cold i do not like that ")
 print("will it rain ?")
  
